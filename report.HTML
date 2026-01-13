@@ -1,0 +1,502 @@
+let questions = [
+{
+q:"How many types of signals are there? / सिग्नलों के कितने प्रकार होते हैं?",
+options:["4","3","2","5"],
+ans:0
+},
+{
+q:"Maximum life of detonators? / पटाखा सिग्नल की अधिकतम आयु?",
+options:["Five years","Three years","Eight years","One year"],
+ans:0
+},
+{
+q:"Detonators in fog are placed at? / कोहरे में पटाखा सिग्नल कहाँ लगाया जाता है?",
+options:["270 m from first stop","180 m from first stop","90–180 m from outer","None"],
+ans:0
+},
+{
+q:"Shunt signal cannot be placed below? / शींट सिग्नल किसके नीचे नहीं लगाया जाता?",
+options:["First stop","Last stop","Both","None"],
+ans:2
+},
+{
+q:"Signal used for shunting? / शींटिंग हेतु सिग्नल?",
+options:["Starter","Home","Shunt","A & C both"],
+ans:3
+},
+{
+q:"Night shunting stop signal by pointsman? / रात में शींट रोकने का संकेत?",
+options:["White light","Red flashing","Red flag","A & B"],
+ans:3
+},
+{
+q:"Night signal for sending load away? / रात में लोड भेजने का संकेत?",
+options:["Green twist","Green side","Green up-down","None"],
+ans:0
+},
+{
+q:"BSLB provided at which class? / BSLB किस स्टेशन पर?",
+options:["B","D","A double line","C"],
+ans:3
+},
+{
+q:"X mark on signal arm means? / सिग्नल पर X का अर्थ?",
+options:["Defective","Out of use","Off","None"],
+ans:1
+},
+{
+q:"Which signal cannot be taken off for shunting?",
+options:["Home","Advanced starter","Outer","All"],
+ans:3
+},
+{
+q:"Max speed in fog with FSD? / फॉग में अधिकतम गति?",
+options:["30","60","75","Cautiously"],
+ans:0
+},
+{
+q:"Inspection carriages in goods train? / निरीक्षण डिब्बे?",
+options:["4","3","2","1"],
+ans:2
+},
+{
+q:"First woman Railway Board CEO?",
+options:["Darshana Jardosh","Jaya Verma Sinha","Sushma Swaraj","Uma Bharti"],
+ans:1
+},
+{
+q:"Brake binding wagon action?",
+options:["Red flag","Red light","Inform station","All"],
+ans:3
+},
+{
+q:"Engine detached with TM permission?",
+options:["On gradient","Outside station","Both","None"],
+ans:2
+},
+{
+q:"Who enquires equipment failure?",
+options:["Senior supervisor","Divisional officer","Sr Div officer","None"],
+ans:0
+},
+{
+q:"Derailed wagon examined by?",
+options:["SE C&W","SE P.Way","SE Elec","None"],
+ans:0
+},
+{
+q:"Types of station by interlocking?",
+options:["3","4","2","1"],
+ans:1
+},
+{
+q:"Golden hour means?",
+options:["First 2 hours","First 1 hour","Accident time","None"],
+ans:1
+},
+{
+q:"ARME Scale-II kept at?",
+options:["Hospital","Station","Medical van","None"],
+ans:2
+},
+{
+q:"EA stands for?",
+options:["Engine accommodation","Engine advantage","Engineering allowance","None"],
+ans:0
+},
+{
+q:"Hot axle wagon symptoms?",
+options:["Smoke","Red hot","Whistling","All"],
+ans:3
+},
+{
+q:"Gate boom defective used?",
+options:["Safety chain","Sliding boom","Both","None"],
+ans:2
+},
+{
+q:"Fresh SWR after how many slips?",
+options:["3","5","4","7"],
+ans:1
+},
+{
+q:"BCACBM goods train type?",
+options:["Car","Livestock","Container","None"],
+ans:2
+},
+{
+q:"Rail Wheel Factory location?",
+options:["Kapurthala","Chennai","Delhi","Ahmedabad"],
+ans:1
+},
+{
+q:"Escort for Class-C ODC?",
+options:["TI","SE C&W","SE P.Way","All"],
+ans:3
+},
+{
+q:"Station section available in?",
+options:["A","B","C","D"],
+ans:1
+},
+{
+q:"Continuous whistling indicates?",
+options:["Call guard","Guard to engine","Tunnel","Passing stop"],
+ans:2
+},
+{
+q:"LHAP max accumulation?",
+options:["300","450","600","Unlimited"],
+ans:2
+},
+{
+q:"Two hooters mean?",
+options:["MRV home","MRV out","ART home","ART out"],
+ans:3
+},
+{
+q:"PSR full form?",
+options:["Peripheral","Permitted","Primary","Permanent speed restriction"],
+ans:3
+},
+{
+q:"Whistle near LC gate?",
+options:["Intermittent long","Intermittent short","Continuous long","Long+short"],
+ans:0
+},
+{
+q:"Consequential accident example?",
+options:["SPAD","Fire","Averted collision","All"],
+ans:1
+},
+{
+q:"WTT means?",
+options:["Working timetable","World token","Western terminal","None"],
+ans:0
+},
+{
+q:"Maternity leave?",
+options:["30","60","180","2 years"],
+ans:2
+},
+{
+q:"Not kept in line box?",
+options:["G&SR","Tri-colour torch","Detonator","Spare mobile"],
+ans:3
+},
+{
+q:"Guard does not exchange signal with?",
+options:["SM","Gateman","Pointsman","RPF"],
+ans:3
+},
+{
+q:"110 kmph for 3 hrs distance?",
+options:["330 km","110 km","300 km","None"],
+ans:0
+},
+{
+q:"Power block means?",
+options:["No train","Only electric","Only diesel","All stopped"],
+ans:0
+},
+{
+q:"Lower pre-departure detention results?",
+options:["More crew","Less crew","Less loco","More loco"],
+ans:1
+},
+{
+q:"HOER related to?",
+options:["Hours of work","Rest rules","Both","None"],
+ans:2
+},
+{
+q:"T/369(3b) used for?",
+options:["Power block","Signal defect","Rail fracture","Accident"],
+ans:1
+},
+{
+q:"Height gauge protects?",
+options:["OHE","Track","Gate","None"],
+ans:0
+},
+{
+q:"Not a coach type?",
+options:["ICF","LHB","BRN","None"],
+ans:2
+},
+{
+q:"Pointsman not involved in?",
+options:["Signal exchange","Stabling","LC gate","Block instrument"],
+ans:3
+},
+{
+q:"Max horsepower loco?",
+options:["G7","G9","G12","G5"],
+ans:2
+},
+{
+q:"Speed restriction imposed on?",
+options:["Engineering","Curves","Weak bridges","All"],
+ans:3
+},
+{
+q:"NI working means?",
+options:["New interlocking","New interchange","Non-interchange","Non-interlocked"],
+ans:3
+},
+{
+q:"Duty of pointsman?",
+options:["Shunting","Signal exchange","Crank handle","All"],
+ans:3
+},
+{
+q:"Bottom discharge wagon?",
+options:["BCN","BOBYN","BRN","BOXN"],
+ans:1
+},
+{
+q:"SOD means?",
+options:["Schedule of Dimensions","Sign of danger","Scale of detention","Scheme drawing"],
+ans:0
+},
+{
+q:"SF-11 in D&AR?",
+options:["Suspension","Minor penalty","Major penalty","None"],
+ans:1
+},
+{
+q:"ACP full form?",
+options:["Advance","Alert","Alarm","Assisted"],
+ans:2
+},
+{
+q:"T/G board indicates?",
+options:["Goods SR end","Passenger SR end","All SR end","None"],
+ans:0
+},
+{
+q:"Notice station serves?",
+options:["Shunting memo","Caution order","Wagon bill","BPC"],
+ans:1
+},
+{
+q:"ART full form?",
+options:["Accident restoration train","Rehabilitation","Relief train","None"],
+ans:0
+},
+{
+q:"Who is in charge of train?",
+options:["Loco pilot","ALP","Train manager","TC"],
+ans:2
+},
+{
+q:"Western Railway divisions?",
+options:["2","4","5","6"],
+ans:3
+},
+{
+q:"SWR appendix for LC gate?",
+options:["A","B","C","D"],
+ans:3
+},
+{
+q:"Max speed of material train?",
+options:["60","75","90","85"],
+ans:0
+},
+{
+q:"CSR means?",
+options:["Clear standing room","Common standing","Case study","Common steady"],
+ans:0
+},
+{
+q:"Shunting speed max?",
+options:["10","15","30","8"],
+ans:0
+},
+{
+q:"Irregularities reported in?",
+options:["Vehicle guidance","CTR","LTM","RS-5"],
+ans:3
+},
+{
+q:"Road learning trips for TM?",
+options:["3","5","4","2"],
+ans:0
+},
+{
+q:"Max speed on Class-B route?",
+options:["130","160","110","None"],
+ans:2
+},
+{
+q:"CMS tracks hours of?",
+options:["TM","Loco pilot","TTE","All staff"],
+ans:1
+},
+{
+q:"HABD prevents?",
+options:["Rain delay","Ticket fraud","Hot bearing accident","Crowd"],
+ans:2
+},
+{
+q:"COA data relates to?",
+options:["Train operation","Attendance","Finance","Feedback"],
+ans:0
+},
+{
+q:"Brake continuity test needed when?",
+options:["Pipe disconnected","Extra loco","Origin station","All"],
+ans:3
+},
+{
+q:"Semi-auto stop signal identification?",
+options:["Illuminated A","Black A disc","Black R disc","None"],
+ans:1
+},
+{
+q:"Shunting limit board at?",
+options:["B","A DL","D","C"],
+ans:3
+},
+{
+q:"Min distance BSLB to Home?",
+options:["400 m","800 m","180 m","120 m"],
+ans:2
+},
+{
+q:"Railway servant obeys?",
+options:["Rules","Instructions","Superior order","All"],
+ans:3
+},
+{
+q:"Gateman night signal if all well?",
+options:["White","Green","Red","None"],
+ans:1
+},
+{
+q:"Gate competency validity?",
+options:["2 years","3 years","5 years","None"],
+ans:1
+},
+{
+q:"BOBYN wagon type?",
+options:["Tank","Hopper","Covered","Container"],
+ans:1
+},
+{
+q:"Paternity leave?",
+options:["10","20","15","25"],
+ans:2
+},
+{
+q:"HABD works by?",
+options:["AC control","Passenger monitor","Axle temperature","None"],
+ans:2
+},
+{
+q:"SWRD full form?",
+options:["Section working rule diagram","Signal WRD","Station WRD","None"],
+ans:0
+},
+{
+q:"Traffic census at LC?",
+options:["3 yrs","5 yrs","1 yr","2 yrs"],
+ans:0
+},
+{
+q:"Max speed Class-A route?",
+options:["160","130","110","None"],
+ans:0
+},
+{
+q:"Absolute block stations classified as?",
+options:["Block","Non-block","Both","None"],
+ans:2
+},
+{
+q:"Longest validity BPC?",
+options:["CC","Premium","Intensive","All same"],
+ans:3
+},
+{
+q:"Who does not keep detonators?",
+options:["Loco pilot","Guard","Gateman","Signal maintainer"],
+ans:3
+},
+{
+q:"Train parting night signal?",
+options:["Red","Green steady","Green up-down","White up-down"],
+ans:0
+},
+{
+q:"Continuity test signal by guard?",
+options:["Red/White","Red/Green","Green/White","Red/Red"],
+ans:2
+},
+{
+q:"Trespasser run over info to?",
+options:["RPF","GRP","Civil police","RPF & GRP"],
+ans:3
+},
+{
+q:"Amendment to subsidiary rules issued by?",
+options:["PCOM","Sr DOM","CRS","PCSO"],
+ans:0
+},
+{
+q:"Line capacity calculated by?",
+options:["Scott","Throughput","Richards","All"],
+ans:3
+},
+{
+q:"Flat tyre beyond limit speed?",
+options:["8","10","20","40"],
+ans:1
+},
+{
+q:"ART order 12:30 dispatched till?",
+options:["13:00","13:15","13:30","12:45"],
+ans:0
+},
+{
+q:"First relief train for passenger accident?",
+options:["ART","ARME","Both","None"],
+ans:1
+},
+{
+q:"Train without brake van permission?",
+options:["PCOM","DRM","Sr DOM","Sr DME"],
+ans:1
+},
+{
+q:"Flat tyre detection device?",
+options:["WILD","USFD","FOIS","COA"],
+ans:0
+},
+{
+q:"COA full form?",
+options:["Centre official","Control office","Crew operations","Customer office"],
+ans:1
+},
+{
+q:"BTPGLN wagon loads?",
+options:["Petrol","Diesel","LPG","Petcoke"],
+ans:2
+},
+{
+q:"ATVU related to?",
+options:["Passenger","Goods","LC","None"],
+ans:1
+},
+{
+q:"KAVACH system relates to?",
+options:["Anti-collision","NTES","COA","CMS"],
+ans:0
+},
+{
+q:"LAP credited per year?",
+options:["30","10","20","12"],
+ans:0
+}
+];
